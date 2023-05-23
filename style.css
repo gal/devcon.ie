@@ -1,0 +1,187 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 2rem;
+
+
+  --bg: #fff;
+  --primary: #7c76bb;
+  --text: #000a;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+p {
+  color: var(--text);
+  font-size: 0.9em;
+}
+
+header {
+  width: 100%;
+  height: 4rem;
+  top: 0;
+  position: sticky;
+  box-sizing: border-box;
+
+  backdrop-filter: blur(5px);
+  background: #fffa;
+}
+
+header nav {
+
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.mini-logo {
+  max-height: 48px;
+}
+
+header nav ul li {
+  font-size: small;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.jumbo {
+  font-size: 3.9rem;
+  color: var(--primary);
+}
+
+#landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.left nav {
+  margin-top: 3em;
+  font-size: 0.9em;
+}
+
+.left nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.left nav ul li a {
+  padding: 0.5rem 1rem;
+}
+
+.left nav ul li:nth-child(1) a {
+  background-color: var(--primary);
+
+  color: #fff;
+}
+
+.left nav ul li:nth-child(2) a {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+
+/* .right {
+  width: 60vw;
+} */
+
+.word-logo {
+  max-width: 500px;
+  min-width: 350px;
+}
+
+#sponsors {
+  margin-top: 6rem;
+}
+
+#sponsors h1 {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  color: var(--primary);
+}
+
+#sponsors ul {
+  /* height: 120px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4em;
+}
+
+#sponsors img {
+  filter: grayscale(100%);
+  max-height: 80px;
+  max-width: 500px;
+
+}
+
+#cadence img {
+  max-height: 45px;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 0 4px 2rem 4px;
+    max-width: 800px;
+    
+  }
+
+  #landing {
+    flex-direction: column;
+  }
+
+  #landing h1 {
+    text-align: center;
+  }
+
+  #landing p {
+    text-align: center;
+  }
+
+  #landing .left nav ul {
+    justify-content: center;
+    margin-bottom: 3em;
+  }
+}
