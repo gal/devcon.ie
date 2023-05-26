@@ -11,7 +11,7 @@ body {
 
 
   --bg: #fff;
-  --primary: #7c76bb;
+  --primary: rgb(124, 118, 187);
   --text: #000a;
 }
 
@@ -86,6 +86,7 @@ header nav ul li a {
 }
 
 #landing {
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,15 +116,20 @@ header nav ul li a {
   color: #fff;
 }
 
+.left nav ul li:nth-child(1) a:hover {
+  background-color: var(--primary);
+  opacity: 90%;
+}
+
+.left nav ul li:nth-child(2) a:hover {
+  background-color: rgba(var(--primary), 1);
+  color: #000;  
+}
+
 .left nav ul li:nth-child(2) a {
   border: 1px solid var(--primary);
   color: var(--primary);
 }
-
-
-/* .right {
-  width: 60vw;
-} */
 
 .word-logo {
   max-width: 500px;
@@ -131,7 +137,8 @@ header nav ul li a {
 }
 
 #sponsors {
-  margin-top: 6rem;
+  height: 30vh;
+  margin: 6rem auto 0 auto;
 }
 
 #sponsors h1 {
